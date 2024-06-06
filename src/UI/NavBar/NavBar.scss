@@ -1,0 +1,31 @@
+.nav_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    a{
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+    #cart_button{
+        font-size: 34px;
+        float: right;
+        a{
+            padding: 14px 16px;
+        }
+    }
+    #back_button{
+        font-size: 34px;
+        float: left;
+        a{
+            padding: 14px 24px;
+        }
+    }
+}
