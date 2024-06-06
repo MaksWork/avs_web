@@ -31,11 +31,11 @@ const ProductList = () => {
     return(
         <div className='product_list'>
             <label>{products}</label>
-            {products?.map((pr) =>{
+            {/* {products?.map((pr) =>{
                 return(
                     <ProductItem key={pr?.id} product={pr}/>
                 )
-            })}
+            })} */}
         </div>
     );
 }
