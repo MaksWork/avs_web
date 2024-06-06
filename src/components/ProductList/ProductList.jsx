@@ -30,7 +30,7 @@ const ProductList = () => {
     
     return(
         <div className='product_list'>
-            <label>{products}</label>
+            <label>{products.message}</label>
             {/* {products?.map((pr) =>{
                 return(
                     <ProductItem key={pr?.id} product={pr}/>
