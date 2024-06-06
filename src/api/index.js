@@ -30,7 +30,7 @@ export const createUserDB = async (user) =>{
 
 export const getAllLiquids = async () =>{
     try {
-        let liquids = await axios.get('http//localhost:8000/test').then(({data}) =>{
+        let liquids = await axios.get('http//84.15.223.67:8000/test').then(({data}) =>{
             return data
         })
         return liquids
