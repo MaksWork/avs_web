@@ -14,15 +14,7 @@ const ProductList = () => {
     const {user} = useTelegram()
 
     let getLiquids = async () =>{
-        let liquids = await fetch('http://localhost:8000/getAllLiquids',{
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then((res) =>{
-            return res.json()
-        })
-        
+        let liquids = await getAllLiquids()
         setProducts(liquids)
     }
 
