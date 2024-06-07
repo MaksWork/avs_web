@@ -33,11 +33,7 @@ const ProductList = () => {
     return(
         <div className='product_list'>
             
-            {products?.message !== undefined ? products?.map((pr) =>{
-                return(
-                    <ProductItem key={pr?.id} product={pr}/>
-                )
-            }) : <label>{products.message}</label>}
+            <label>{products.message}</label>
         </div>
     );
 }
