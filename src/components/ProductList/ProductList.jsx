@@ -14,7 +14,9 @@ const ProductList = () => {
     const {user} = useTelegram()
 
     let getLiquids = async () =>{
-        let liquids = await getAllLiquids()
+        let liquids = await axios.get('http//94.231.205.79:8000/test').then(({data}) =>{
+            return data
+        })
         setProducts(liquids)
     }
 
@@ -30,12 +32,12 @@ const ProductList = () => {
     
     return(
         <div className='product_list'>
-            <label>{products.message}</label>
-            {/* {products?.map((pr) =>{
+            
+            {products?.message !== undefined ? products?.map((pr) =>{
                 return(
                     <ProductItem key={pr?.id} product={pr}/>
                 )
-            })} */}
+            }) : <label>{products.message}</label>}
         </div>
     );
 }
