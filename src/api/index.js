@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const postPushCartToDb = async (cart, username) =>{
     try {  
-        await axios.post('http://localhost:8000/addToCart', {cart, username})  
+        await axios.post('https://avs-bot-wyzq.onrender.com/addToCart', {cart, username})  
     } catch (error) {
         console.log(error);
     }
@@ -11,7 +11,7 @@ export const postPushCartToDb = async (cart, username) =>{
 
 export const getUserCart = async (username) =>{
     try {
-        const user_cart = await axios.get('http://localhost:8000/getUserCart', {username}).then((res) =>{
+        const user_cart = await axios.get('https://avs-bot-wyzq.onrender.com/getUserCart', {username}).then((res) =>{
             return res
         })
         return user_cart
@@ -22,7 +22,7 @@ export const getUserCart = async (username) =>{
 
 export const createUserDB = async (user) =>{
     try {
-        await axios.post('http://localhost:8000/createUser', {user})
+        await axios.post('https://avs-bot-wyzq.onrender.com/createUser', {user})
     } catch (error) {
         console.log(error);
     }
@@ -30,7 +30,7 @@ export const createUserDB = async (user) =>{
 
 export const getAllLiquids = async () =>{
     try {
-        let liquids = await axios.get('http//94.231.205.79:8000/test').then(({data}) =>{
+        let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/test').then(({data}) =>{
             return data
         })
         return liquids
