@@ -14,7 +14,7 @@ const ProductList = () => {
     const {user} = useTelegram()
 
     let getLiquids = async () =>{
-        let liquids = await axios.get('http://94.231.205.79:8000/test').then(({data}) =>{
+        let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/test').then(({data}) =>{
             return data
         })
         setProducts(liquids)
