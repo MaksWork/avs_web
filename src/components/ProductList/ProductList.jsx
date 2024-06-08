@@ -14,7 +14,7 @@ const ProductList = () => {
     const {user} = useTelegram()
 
     let getLiquids = async () =>{
-        let liquids = getAllLiquids();
+        let liquids = await getAllLiquids();
         setProducts(liquids)
     }
 

@@ -29,12 +29,8 @@ export const createUserDB = async (user) =>{
 }
 
 export const getAllLiquids = async () =>{
-    try {
-        let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/test').then(({data}) =>{
-            return data
-        })
-        return liquids
-    } catch (error) {
-        return error
-    }
+    let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/test').then(({data}) =>{
+        return data
+    })
+    return liquids
 }
