@@ -1,0 +1,4 @@
+[[redirects]]
+    from = http://94.231.205.79:8000/:splat 200
+    to = /api/* 
+    status = 200
