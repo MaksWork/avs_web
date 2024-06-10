@@ -29,7 +29,7 @@ export const createUserDB = async (user) =>{
 }
 
 export const getAllLiquids = async () =>{
-    let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/getAllLiquids').then(({data}) =>{
+    let liquids = await axios.get('https://avs-bot-wyzq.onrender.com/test').then(({data}) =>{
         return data
     })
     return liquids
