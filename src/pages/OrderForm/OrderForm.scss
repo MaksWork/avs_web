@@ -1,0 +1,33 @@
+.order_form{
+    .order_view{
+        border: 1px solid #fff;
+        border-radius: 9px;
+        padding: 10px;
+        .order_view_item{
+            border-bottom: 1px solid;
+            padding: 4px;
+            display: flex;
+
+            justify-content: space-between;
+        }
+    }
+    h3{
+        float: right;
+    }
+    .input_form{
+        padding: 0;
+        margin-top: 3rem;
+        input{
+            border: none;
+            padding: 4px;
+            font-size: 18px;
+            width: 95%;
+            margin: 1rem auto;
+            outline: 0;
+        }
+        select{
+            width: 97%;
+            font-size: 18px;
+        }
+    }
+}

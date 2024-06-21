@@ -22,7 +22,7 @@ export const getUserCart = async (username) =>{
 
 export const createUserDB = async (user) =>{
     try {
-        await axios.post('https://avs-bot-wyzq.onrender.com/createUser', {user})
+        await axios.post('http:///createUser', {user})
     } catch (error) {
         console.log(error);
     }
