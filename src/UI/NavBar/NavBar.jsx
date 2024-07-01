@@ -3,6 +3,7 @@ import './NavBar.scss'
 import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { howManyInCart } from '../../utils';
+import avs_logo from '../../../public/avs_logo.jpg'
 
 
 const NavBar = () => {
@@ -70,6 +71,7 @@ const NavBar = () => {
     
     return(
         <ul className='nav_bar'>
+            <Link to={'/'} className='logo'><img src={avs_logo}></img></Link>
             {navButton}
         </ul>
     );

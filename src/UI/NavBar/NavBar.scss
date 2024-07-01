@@ -6,7 +6,11 @@
     position: fixed;
     top: 0;
     width: 97%;
-    a{
+    img{
+        width: 70px;
+        border-radius: 50%;
+    }
+    a:not(.logo){
         display: block;
         color: white;
         text-align: center;
@@ -37,8 +41,8 @@
         }
     }
     #back_button{
+        float: right;
         font-size: 25px;
-        float: left;
         a{
             padding: 14px 24px;
         }
