@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import './OrderForm.scss'
 import { costOfAllProducts } from '../../utils';
-import SelectPak from '../../UI/NavBar/SelectPak/SelectPak';
+//import SelectPak from '../../UI/NavBar/SelectPak/SelectPak';
 
 const OrderForm = () => {
     let [totalCost, setTotalCost] = useState(0);
