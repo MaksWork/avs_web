@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import './OrderForm.scss'
 import { costOfAllProducts } from '../../utils';
-//import SelectPak from '../../UI/NavBar/SelectPak/SelectPak';
+import { SelectPak } from '../../UI/NavBar/SelectPak/SelectPak';
 
 const OrderForm = () => {
     let [totalCost, setTotalCost] = useState(0);
@@ -40,7 +40,7 @@ const OrderForm = () => {
             <h3>Total: {totalCost}€</h3>
             <div className='input_form'>
                 <input value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Введите свой номер телефона'></input>
-                {/* <SelectPak/> */}
+                <SelectPak/>
             </div>
         </div>
     );
