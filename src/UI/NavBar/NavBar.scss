@@ -1,0 +1,50 @@
+.nav_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    img{
+        width: 70px;
+        border-radius: 50%;
+    }
+    a:not(.logo){
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 9px;
+    }
+    #cart_button{
+        font-size: 25px;
+        float: right;
+        position: relative;
+        a{
+            padding: 14px 16px;
+        }
+        .dot_amount{
+            width: 25px;
+            height: 25px;
+            background-color: #000;
+            position: absolute;
+            color: #fff;
+            right: 78%;
+            top: 4%;
+            border-radius: 50%;
+            display: none;
+            font-size: 15px;
+            text-align: center;
+            border: none;
+        }
+    }
+    #back_button{
+        float: right;
+        font-size: 25px;
+        a{
+            padding: 14px 24px;
+        }
+    }
+}
