@@ -30,7 +30,7 @@ const ProductItem = ({product}) => {
     
     return(
         <div className='product_item'>
-            <img src={`http://94.231.205.79:8000/static/imgs/${product?.img_flag}.png`}/>
+            <img src={`/api/static/imgs/${product?.img_flag}.png`}/>
             <label>{product?.title}</label>
             <div>
                 {product.ml ? <label>ml : {product?.ml}</label> : <></>}
