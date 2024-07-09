@@ -2,7 +2,11 @@ import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import './OrderForm.scss'
 import { costOfAllProducts } from '../../utils';
+<<<<<<< HEAD
 import SelectPak from '../../UI/NavBar/SelectPak/SelectPak';
+=======
+import SelectPak from '../../UI/SelectPak/SelectPak';
+>>>>>>> 57cef6eb942ce7dd0c0f99eba09f441d1c3265d8
 
 const OrderForm = () => {
     let [totalCost, setTotalCost] = useState(0);
@@ -21,7 +25,11 @@ const OrderForm = () => {
     useEffect(() =>{
         let cost = costOfAllProducts(cart)
         setTotalCost(cost)
+<<<<<<< HEAD
     })
+=======
+    },[])
+>>>>>>> 57cef6eb942ce7dd0c0f99eba09f441d1c3265d8
     
     return(
         <div className='order_form'>
